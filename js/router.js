@@ -15,6 +15,7 @@
 	    "list":       "list",
 	    "/item/:id":  "item",
 	    "!/item/:id": "item",
+	    
 	  },
 	
 	  list: function () {

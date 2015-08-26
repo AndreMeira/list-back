@@ -12,7 +12,7 @@ $(document).ready(function () {
 		app.router = new ListBack.Router();
 		
 		Backbone.history.start({
-			//pushState: true,
+			pushState: true,
 			root:''
 		});
 	});
