@@ -9,6 +9,7 @@
 		
 		navigateToItem: function (evt) {
 			var target = $(evt.target);
+			console.log(target);
 			ListBack.app.router.navigate('/item/' + target.getAttribute('data-id'));
 			return false;
 		},
