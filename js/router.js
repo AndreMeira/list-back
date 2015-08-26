@@ -13,13 +13,13 @@
 	  	"!/":         "list",
 	  	"/":          "list",
 	    "list":       "list",
-	    "/item/:id":   "item",
+	    "/item/:id":  "item",
 	    "!/item/:id": "item",
 	  },
 	
 	  list: function () {
 	  	  if (listRendered) {
-	  	  	window.history.back();
+	  	  	//window.history.back();
 	  	  	return;
 	  	  }
 	  	  listRendered = true;
