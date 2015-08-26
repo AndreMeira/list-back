@@ -23,13 +23,13 @@
 	  	  	return;
 	  	  }
 	  	  listRendered = true;
-	  	  this.app.getRegion('mainRegion').show(new ListBack.CollectionView({
+	  	  ListBack.app.getRegion('mainRegion').show(new ListBack.CollectionView({
 	  	  	  collection: col
 	  	  }));
 	  },
 	
 	  item: function (id) {
-	  	this.app.getRegion('mainRegion').show(new ListBack.MyItemView({
+	  	ListBack.getRegion('mainRegion').show(new ListBack.MyItemView({
 		  model: col.get(id)
 		}));
 	  }

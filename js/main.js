@@ -8,8 +8,8 @@ $(document).ready(function () {
 
 	// Start history when our application is ready
 	app.on('start', function() {
+		ListBack.app = app;
 		app.router = new ListBack.Router();
-		app.router.app = app;
 		
 		Backbone.history.start({
 			pushState: true,

@@ -8,6 +8,7 @@
 		},
 		
 		navigateToItem: function () {
+			
 			return false;
 		},
 		
