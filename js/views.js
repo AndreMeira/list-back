@@ -10,7 +10,9 @@
 		navigateToItem: function (evt) {
 			var target = $(evt.target).closest('span');
 			console.log(target);
-			ListBack.app.router.navigate('/item/' + target.attr('data-id'));
+			ListBack.app.router.navigate('/item/' + target.attr('data-id'), {
+				trigger: true
+			});
 			return false;
 		},
 		
