@@ -8,9 +8,9 @@
 		},
 		
 		navigateToItem: function (evt) {
-			var target = $(evt.target);
+			var target = $(evt.target).closest('span');
 			console.log(target);
-			ListBack.app.router.navigate('/item/' + target.getAttribute('data-id'));
+			ListBack.app.router.navigate('/item/' + target.attribute('data-id'));
 			return false;
 		},
 		
