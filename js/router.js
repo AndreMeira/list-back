@@ -13,6 +13,7 @@
 	  	"!/":         "list",
 	  	"/":          "list",
 	    "list":       "list",
+	    "item/:id":  "item",
 	    "/item/:id":  "item",
 	    "!/item/:id": "item",
 	    
