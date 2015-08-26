@@ -9,7 +9,7 @@
 		
 		navigateToItem: function (evt) {
 			var target = $(evt.target);
-			ListBack.app.router.navigate('/item/' + target.data('id'));
+			ListBack.app.router.navigate('/item/' + target.getAttribute('data-id'));
 			return false;
 		},
 		
