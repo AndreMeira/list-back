@@ -43,7 +43,8 @@
 <script type="text/javascript">
 	$('li span').click(function () {
 		var id = $(this).attr('data-id');
-		console.log('>>>>>>>>>>>>>>>>>>>>>>>>>> on click', id);
+		ListBack.app.router.navigate('/item/'+id);
+		return false;
 	});  	
 </script>
     
