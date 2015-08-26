@@ -1,5 +1,5 @@
 (function () {
-	var tpl = '<span id="item-<%= id %>"><a href="#!/item/<%= id %>"><%= name %></a></span>';
+	var tpl = '<span id="item-<%= id %>" data-id="<%= id %>"><a href="#!/item/<%= id %>"><%= name %></a></span>';
 	ListBack.ItemView = Marionette.ItemView.extend({
 		tagName: 'li',
 		
@@ -7,8 +7,9 @@
 			'click a': 'navigateToItem'
 		},
 		
-		navigateToItem: function () {
-			
+		navigateToItem: function (evt) {
+			var target = $(evt.target);
+			ListBack.app.router.navigate('/item/' + target.data('id'));
 			return false;
 		},
 		
