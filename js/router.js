@@ -30,7 +30,7 @@
 	
 	  item: function (id) {
 	  	console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> item');
-	  	ListBack.getRegion('mainRegion').show(new ListBack.MyItemView({
+	  	ListBack.app.getRegion('mainRegion').show(new ListBack.MyItemView({
 		  model: col.get(id)
 		}));
 	  }
