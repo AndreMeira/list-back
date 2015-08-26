@@ -13,7 +13,7 @@ $(document).ready(function () {
 		
 		Backbone.history.start({
 			pushState: true,
-			root:''
+			root:'/'
 		});
 	});
 	
