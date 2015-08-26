@@ -24,7 +24,7 @@
 	  	  	//window.history.back();
 	  	  	return;
 	  	  }
-	  	  listRendered = true;
+	  	  //listRendered = true;
 	  	  ListBack.app.getRegion('mainRegion').show(new ListBack.CollectionView({
 	  	  	  collection: col
 	  	  }));
