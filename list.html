@@ -41,7 +41,9 @@
 	</section>	
 </div>
 <script type="text/javascript">
-	window.history.pushState({}, 'test', '/list.html');
+	var list = $('#main-region').html();
+	ListBack.listHtml = list;
+	
 	$('li span').click(function () {
 		var id = $(this).attr('data-id');
 		ListBack.app.router.navigate('/item/'+id, {

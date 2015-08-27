@@ -22,11 +22,11 @@
 	  },
 	
 	  list: function () {
-	  	  if (listRendered) {
-	  	  	//window.history.back();
+	  	  if (ListBack.listHtml) {
+	  	  	$('#main-region').html(ListBack.listHtml);
 	  	  	return;
 	  	  }
-	  	  //listRendered = true;
+	  	  
 	  	  ListBack.app.getRegion('mainRegion').show(new ListBack.CollectionView({
 	  	  	  collection: col
 	  	  }));

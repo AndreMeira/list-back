@@ -2,7 +2,7 @@ $(document).ready(function () {
 	window.onpopstate = function(event) {
 	  console.log('>>>>>>>>>>>>>>>>>>>> onpopstate', event);
 	  //$('#main-region').html(ListBack.listHtml);
-	  window.history.back();
+	  //window.history.back();
 	};
 	var app = new Mn.Application({
 		container: '#main',
