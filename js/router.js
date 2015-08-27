@@ -22,15 +22,11 @@
 	  },
 	
 	  list: function () {
-	  	  
-	  	  if (ListBack.listView) {
-	  	  	ListBack.app.getRegion('mainRegion').show(ListBack.listView);
-	  	  	return;
-	  	  }
 	  	  ListBack.listView = new ListBack.CollectionView({
 	  	  	  collection: col
 	  	  });
 	  	  ListBack.app.getRegion('mainRegion').show(ListBack.listView);
+	  	  $('#item-98')[0].scrollIntoView();
 	  },
 	
 	  item: function (id) {
