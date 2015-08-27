@@ -43,9 +43,12 @@
 <script type="text/javascript">
 	$('li span').click(function () {
 		var id = $(this).attr('data-id');
-		ListBack.app.router.navigate('/#!/item/'+id, {
+		ListBack.app.router.navigate('/item/'+id, {
 			trigger: true
 		});
+		ListBack.app.getRegion('mainRegion').show(new ListBack.MyItemView({
+		  model: ListBack.collection.get(id)
+		}));
 		return false;
 	});  	
 </script>

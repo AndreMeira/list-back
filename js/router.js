@@ -6,6 +6,8 @@
         col.add(new ListBack.Model({id:i, name:"test-" +i}));	
     }
     
+    ListBack.collection = col;
+    
 	ListBack.Router = Backbone.Router.extend({
 
 	  routes: {
