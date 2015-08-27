@@ -46,10 +46,11 @@
 		ListBack.app.router.navigate('/item/'+id, {
 			trigger: true
 		});
+		return false;
 		ListBack.app.getRegion('mainRegion').show(new ListBack.MyItemView({
 		  model: ListBack.collection.get(id)
 		}));
-		return false;
+		
 	});  	
 </script>
     
