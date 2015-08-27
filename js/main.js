@@ -1,7 +1,7 @@
 $(document).ready(function () {
-	window.onpopstate = function(event) {
-	  console.log('>>>>>>>>>>>>>>>>>>>> onpopstate', event);
-	};
+	//window.onpopstate = function(event) {
+	  //console.log('>>>>>>>>>>>>>>>>>>>> onpopstate', event);
+	//};
 	var app = new Mn.Application({
 		container: '#main',
 		regions: {
