@@ -22,14 +22,15 @@
 	  },
 	
 	  list: function () {
-	  	  if (ListBack.listHtml) {
-	  	  	$('#main-region').html(ListBack.listHtml);
+	  	  
+	  	  if (ListBack.listView) {
+	  	  	ListBack.app.getRegion('mainRegion').show(ListBack.listView);
 	  	  	return;
 	  	  }
-	  	  
-	  	  ListBack.app.getRegion('mainRegion').show(new ListBack.CollectionView({
+	  	  ListBack.listView = new ListBack.CollectionView({
 	  	  	  collection: col
-	  	  }));
+	  	  });
+	  	  ListBack.app.getRegion('mainRegion').show(ListBack.listView);
 	  },
 	
 	  item: function (id) {
